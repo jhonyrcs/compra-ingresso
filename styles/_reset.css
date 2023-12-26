@@ -1,0 +1,28 @@
+/* Reset geral para eliminar margens e preenchimentos padrão e garantir box-sizing uniforme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte padrão para títulos */
+h1, h2, h3 {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Removendo o estilo padrão das listas */
+ul {
+    list-style-type: none;
+}
+
+/* Removendo as setas de incremento/decremento nos inputs de tipo número no Chrome */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Removendo a aparência padrão de texto nos inputs de tipo número no Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
